@@ -9,31 +9,43 @@
 
 <a href="https://localhost:44384/Home/Privacy">
 
+    <div class="img">
+        <a target="_blank" href="~/imagens/gatil1.png">
+            <img src="~/imagens/gatil1.png" alt="gatil1" width="300" height="200">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+    </div>
 
+    <div class="img">
+        <a target="_blank" href="~/imagens/canil1.png">
+            <img src="~/imagens/canil1.png" alt="canil1" width="300" height="200">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+    </div>
 
-@section css {
-    <style>
+    @section css {
+        <style>
 
-        .holder {
-            display: flex;
-            justify-content: center;
-        }
-
-        .imagem {
-            width: 200px;
-            margin: 10px;
-            position: relative;
-            text-align: center;
-        }
-
-            .imagem::after {
-                content: attr(data-title); /* estilo que coloco a legenda no lugar */
-                position: absolute;
-                width: 100%;
-                bottom: -20px;
-                left: 0;
+            .holder {
+                display: flex;
+                justify-content: center;
             }
-    </style>
 
-}
+            .imagem {
+                width: 200px;
+                margin: 10px;
+                position: relative;
+                text-align: center;
+            }
+
+                .imagem::after {
+                    content: attr(data-title); /* estilo que coloco a legenda no lugar */
+                    position: absolute;
+                    width: 100%;
+                    bottom: -20px;
+                    left: 0;
+                }
+        </style>
+
+    }
 
