@@ -6,7 +6,8 @@
     <title>@ViewData["Title"] - Apresentacao</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
-    @RenderSection("css",false)
+    @RenderSection("css", false)
+    
 </head>
 <body>
     <header>
@@ -14,7 +15,7 @@
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
 
-                    <img src="~/imagens/C & G logo.png"  width="75" height="75" />
+                    <img src="~/imagens/C & G logo.png" width="75" height="75" />
 
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -32,7 +33,7 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Client" asp-action="Create">Cadastro</a>
                         </li>
-                      
+
                     </ul>
                 </div>
             </div>
@@ -45,7 +46,9 @@
     </div>
 
     <footer class="border-top footer text-muted">
+       
         <div class="container">
+
             &copy; 2022 - Apresentacao - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
@@ -56,9 +59,3 @@
 </body>
 </html>
 
-*{
-padding: 0;
-margin: 0;
-box-sizing: border-box; 
-
-}
