@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
     @RenderSection("css", false)
-    
+
 </head>
 <body>
     <header>
@@ -31,9 +31,15 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Galeria</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Projeto" asp-action="Create">Projetos</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Client" asp-action="Create">Cadastro</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Contato" asp-action="Create">Contatos</a>
 
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -46,7 +52,7 @@
     </div>
 
     <footer class="border-top footer text-muted">
-       
+
         <div class="container">
 
             &copy; 2022 - Apresentacao - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
@@ -59,3 +65,30 @@
 </body>
 </html>
 
+
+<style>
+    li:link, li:visited {
+        text-decoration: none
+    }
+
+    li:hover {
+        text-decoration: underline;
+        color: #f00
+    }
+
+    li:active {
+        text-decoration: none
+    }
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+       
+        background-color: #e9e2e2;
+        color: black;
+    }
+
+   
+</style>
