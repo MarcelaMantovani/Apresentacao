@@ -4,8 +4,9 @@
     ViewData["Title"] = "Create";
 }
 
-
-<h4>Cadastro</h4>
+<p>Cadastro</p>
+</br></br>
+<a>Cadastre-se para receber informativos sobre nossas futuras campanhas!</a>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -28,8 +29,8 @@
             </div>
             <div class="form-group">
                 <body>
-                    <input type="submit" onclick="funcao1()" value="Cadastrar"  class="btn btn-primary" />
-                   
+                    <input type="submit" onclick="funcao1()" value="Cadastrar" class="btn btn-primary" />
+
                 </body>
             </div>
         </form>
@@ -43,19 +44,20 @@
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-  
-  
+
+
 }
 
 @section css {
 
     <style>
-      
-    
-      
-       
-           
-        
+        p {
+            font-style: italic;
+            font-weight: bold;
+            font-size: 18px;
+            font-family: 'Times New Roman', sans-serif;
+            color: black
+        }
     </style>
 }
 
@@ -64,6 +66,6 @@
     function funcao1() {
         alert("Usuário cadastrado com sucesso!");
     }
-    
+
 </script>
 
