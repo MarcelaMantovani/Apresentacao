@@ -14,9 +14,7 @@
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
-
                     <img src="~/imagens/C & G logo.png" width="75" height="75" />
-
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -36,10 +34,7 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Client" asp-action="Create">Cadastro</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Contato" asp-action="Create">Contatos</a>
-
-                        </li>
+                       
                     </ul>
                 </div>
             </div>
@@ -49,15 +44,15 @@
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
+
     </div>
+    <div class="container" id="footerr">
+        </br></br></br></br></br></br></br></br></br>
+        <footer class="footer text-muted footer navbar-fixed-bottom">
 
-    <footer class="border-top footer text-muted">
-
-        <div class="container">
-
-            &copy; 2022 - Apresentacao - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
+            &copy;Telefone de contato: (16)3252-2222/(16)97788-0000  e-mail: caoegato@hotmail.com <a asp-area="" asp-controller="Home" asp-action="Privacy"></a>
+        </footer>
+    </div>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
@@ -67,29 +62,33 @@
 
 
 <style>
-
-
-
     li:hover {
-        
         text-decoration: underline;
         background-color: aqua;
-        
     }
 
-  
-  
     * {
         margin: 0;
         padding: 0;
     }
 
-    body {
-       
-        background-color: #e9e2e2;
-        color: black;
+    .footer {
+        display: inline;
+        width: 80%;
     }
 
+    a {
+        font-style: italic;
+        text-align: center;
+        display: block;
+        font-weight: bold;
+        font-size: 20px;
+        font-family: 'Times New Roman', sans-serif;
+        color: black
+    }
 
-   
+    body {
+        background-color: #ecf9fb;
+        color: black;
+    }
 </style>

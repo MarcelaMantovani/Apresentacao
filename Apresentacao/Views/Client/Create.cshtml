@@ -27,27 +27,42 @@
                 <span asp-validation-for="Senha" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <body>
+                    <input type="submit" onclick="funcao1()" value="Cadastrar"  class="btn btn-primary" />
+                   
+                </body>
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index"></a>
 </div>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+  
+  
 }
 
 @section css {
 
-<style>
-
-    body{
-        background-color:#ebe6e6;
-    }
-
-</style>
+    <style>
+      
+    
+      
+       
+           
+        
+    </style>
 }
+
+<script>
+
+    function funcao1() {
+        alert("Usuário cadastrado com sucesso!");
+    }
+    
+</script>
+

@@ -2,93 +2,152 @@
 
 <div class="text">
     <h1>Inicio</h1>
-    <h1>Sejam bem vindos!</h1>
-    
+
 </div>
-<a>Projeto “Adote um Companheiro”</a>
+<a id="quemSomos">Quem somos</a>
+<br />
 
 <p>
-    Adotar é um ato de amor e esse bichinhos estão à procura de um novo lar, uma segunda chance de ser feliz, pois quem não quer neah!? <br /><br /> 
+    Somos um grupo de voluntários apaixonados por animais e juntos realizamos um lindo trabalho de defesa e proteção animal em nossa ONG.
+
+
+    Sendo assim somos uma organização sem fins lucrativos fundada em 2020.
+
+    para oferecer auxílio aos animais necessitados que estão abandonados à sua própria sorte. Nossa missão sempre foi a de mudar a realidade destes que muitas vezes estão completamente indefesos, vítimas da crueldade e do abuso, enquanto tentam sobreviver sem proteção.
+
+    Nós lutamos para defender seus interesses, realizando procedimentos veterinários à animais de tutores, protetores, e/ou de abrigos,
+    incluindo resgates de animais, recuperação, adoções, castrações, vacinações, campanhas de doações de rações, medicamentos e assistência veterinária. <br />
+
+    Adotar é um ato de amor e esse bichinhos estão à procura de um novo lar, uma segunda chance de ser feliz, pois quem não quer neah!? <br />
     Castramos, vacinamos e oferecemos comidas por um período para manutenção em seu novo lar.
 
     Infelizmente o número de animais em situação de abandono é muito grande e por isso pedimos para que não compre esse animaizinhos, adote!<br />
 
-    Nosso lar é limpo e higienizado semanalmente e damos total conforto para os animais. Você pode ajudar com doações, como ração ou dinheiro para melhor atendimento ao nossos animais.
-    Estamos na região de Taquaritinga-SP à disposição 24h, contato pelo telefone ---- ou whatsapp ----.
+    Nosso lar é limpo e higienizado semanalmente e damos total conforto para os animais. Você pode ajudar com doações, como ração ou dinheiro para melhor atendimento ao nossos animais.<br />
 
+    Peço que ao tomar a decisão de adotar um animalzinho, tenha em mente que você ira dispor de um tempo para ele, assim como retribuirá com carinho.<br /><br />
 
-    Peço que ao tomar a decisão de adotar um animalzinho, tenha em mente que você ira dispor de um tempo para ele, assim como retribuirá com carinho. Afinal, esse esse laço afetivo, não depende de pedigree.
+    Afinal, esse esse laço afetivo, não depende de pedigree.<br /><br />
     Obrigado.
 
-    </p>
-    <a href="https://localhost:44384/Home/Privacy">
+</p>
+<a href="https://localhost:44384/Home/Privacy">
 
-        <div class="img">
-            <a target="_blank" href="~/imagens/cachorro10.png">
-                <img src="~/imagens/cachorro10.png" alt="cachorro10" width="300" height="200">
-            </a>
-            <p>Não compre adote!</p>
-        </div>
+    <div class="img">
 
-        <div class="img">
-            <a target="_blank" href="~/imagens/cachorroegatp.png">
-                <img src="~/imagens/cachorroegatp.png" alt="canil1" width="300" height="200">
-            </a>
-            <div class="desc">Add a description of the image here</div>
-        </div>
+        <img src="~/imagens/cachorro10.png" alt="cachorro10" width="300" height="200">
+
+    </div>
 
 
 
-        @section css {
-            <style>
-                body {
-                    background-color: #ebe6e6;
+    <div class="img">
+
+        <img src="~/imagens/cachorroegatp.png" alt="canil1" width="300" height="200">
+
+    </div>
+
+    <div class="img">
+
+        <img src="~/imagens/gatoecao.png" alt="canil1" width="300" height="200">
+
+    </div>
+
+    <div class="img">
+
+        <img src="~/imagens/caoegato.png" alt="canil1" width="300" height="200">
+
+    </div>
+
+
+    @section css {
+        <style>
+
+
+            div.header {
+                height: 150px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+
+            div.img {
+                margin: 40px;
+                border: 1px solid #ccc;
+                float: left;
+                width: 180px;
+                box-sizing: 200px;
+            }
+
+                div.img:hover {
+                    border: 1px solid #777;
                 }
 
-                .holder {
-                    display: flex;
-                    justify-content: center;
+                div.img img {
+                    width: 100%;
+                    height: 100%;
                 }
 
-                .imagem {
-                    width: 200px;
-                    margin: 10px;
-                    position: relative;
-                    text-align: center;
+            div.desc {
+                padding: 15px;
+                text-align: center;
+            }
+
+            .img {
+                display: grid;
+                grid-template-columns: 200px 200px 200px;
+                grid-auto-rows: 175px;
+                grid-column-gap: 10px;
+                grid-row-gap: 1em;
+            }
+
+            .holder {
+                display: flex;
+                justify-content: center;
+            }
+
+            .imagem {
+                width: 200px;
+                margin: 10px;
+                position: relative;
+                text-align: center;
+            }
+
+                .imagem::after {
+                    content: attr(data-title); /* estilo que coloco a legenda no lugar */
+                    position: absolute;
+                    width: 100%;
+                    bottom: -20px;
+                    left: 0;
                 }
 
-                    .imagem::after {
-                        content: attr(data-title); /* estilo que coloco a legenda no lugar */
-                        position: absolute;
-                        width: 100%;
-                        bottom: -20px;
-                        left: 0;
-                    }
-
-                p {
-                   
-                    font-size: 18px;
-                    font-family: 'Times New Roman', sans-serif;
-                    color: black
-                }
+            p {
+                font-size: 18px;
+                font-family: 'Times New Roman', sans-serif;
+                color: black;
+                text-align: justify;
+            }
 
 
-                h1 {
-                    font-style: italic;
-                    font-weight: bold;
-                    font-size: 18px;
-                    font-family: 'Times New Roman', sans-serif;
-                    color: black
-                }
+            h1 {
+                font-style: italic;
+                font-weight: bold;
+                font-size: 18px;
+                font-family: 'Times New Roman', sans-serif;
+                color: black
+            }
 
-                a {
-                    font-style: italic;
-                    font-weight: bold;
-                    font-size: 18px;
-                    font-family: 'Times New Roman', sans-serif;
-                    color: black
-                }
-            </style>
+            #quemSomos {
+                font-style: italic;
+                text-align: center;
+                display: block;
+                font-weight: bold;
+                font-size: 30px;
+                font-family: 'Times New Roman', sans-serif;
+                color: black
+            }
+        </style>
 
-        }
+    }
 
