@@ -4,7 +4,7 @@
     <h1>Inicio</h1>
 
 </div>
-<a id="quemSomos">Quem somos</a>
+<a id="quemSomos" class="">Quem somos</a>
 <br />
 
 <p>
@@ -31,53 +31,60 @@
     Obrigado.
 
 </p>
-<a href="https://localhost:44384/Home/Privacy">
+<div class="row">
 
-    <div class="img">
+    <div class="img col-3">
 
-        <img src="~/imagens/cachorro10.png" alt="cachorro10" width="300" height="200">
+        <img src="~/imagens/cachorro10.png" alt="cachorro10" width="300" height="200" />
+
+    </div>
+    <div class="img col-3">
+
+        <img src="~/imagens/cachorroegatp.png" alt="canil1" width="300" height="200" />
+
+    </div>
+    <div class="img col-3">
+
+        <img src="~/imagens/gatoecao.png" alt="canil1" width="300" height="200" />
 
     </div>
 
+    <div class="img col-3">
 
-
-    <div class="img">
-
-        <img src="~/imagens/cachorroegatp.png" alt="canil1" width="300" height="200">
+        <img src="~/imagens/caoegato.png" alt="canil1" width="300" height="200" />
 
     </div>
+</div>
 
-    <div class="img">
+   
 
-        <img src="~/imagens/gatoecao.png" alt="canil1" width="300" height="200">
 
-    </div>
+   
 
-    <div class="img">
-
-        <img src="~/imagens/caoegato.png" alt="canil1" width="300" height="200">
-
-    </div>
+   
 
 
     @section css {
         <style>
-
+            
 
             div.header {
                 height: 150px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                
             }
 
 
             div.img {
-                margin: 40px;
-                border: 1px solid #ccc;
-                float: left;
-                width: 180px;
-                box-sizing: 200px;
+               /* margin: 40px;*/
+              
+              /*  border: 1px solid #ccc;*/
+              /*  float: left;*/
+             /*   width: 180px;*/
+             /*   box-sizing: 200px;*/
+               
             }
 
                 div.img:hover {
@@ -100,6 +107,7 @@
                 grid-auto-rows: 175px;
                 grid-column-gap: 10px;
                 grid-row-gap: 1em;
+               
             }
 
             .holder {

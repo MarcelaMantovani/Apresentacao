@@ -7,6 +7,39 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
     @RenderSection("css", false)
+    <style>
+
+
+        li:hover {
+            text-decoration: underline;
+            background-color: aqua;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .footer {
+            /*display: inline;
+            width: 80%;*/
+        }
+
+        a {
+            font-style: italic;
+            text-align: center;
+            display: block;
+            font-weight: bold;
+            font-size: 20px;
+            font-family: 'Times New Roman', sans-serif;
+            color: black
+        }
+
+        body {
+            background-color: #ecf9fb;
+            color: black;
+        }
+    </style>
 
 </head>
 <body>
@@ -50,13 +83,13 @@
         </main>
 
     </div>
-    <div class="container" id="footerr">
-        </br></br></br></br></br></br></br></br></br>
-        <footer class="footer text-muted footer navbar-fixed-bottom">
+   
+        <br />
+        <footer class="footer text-muted footer navbar-fixed-bottom text-center">
 
             &copy;Telefone de contato: (16)3252-2222/(16)97788-0000  e-mail: caoegato@hotmail.com <a asp-area="" asp-controller="Home" asp-action="Privacy"></a>
         </footer>
-    </div>
+  
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
@@ -65,36 +98,3 @@
 </html>
 
 
-<style>
-
- 
-    li:hover {
-        text-decoration: underline;
-        background-color: aqua;
-    }
-
-    * {
-        margin: 0;
-        padding: 0;
-    }
-
-    .footer {
-        display: inline;
-        width: 80%;
-    }
-
-    a {
-        font-style: italic;
-        text-align: center;
-        display: block;
-        font-weight: bold;
-        font-size: 20px;
-        font-family: 'Times New Roman', sans-serif;
-        color: black
-    }
-
-    body {
-        background-color: #ecf9fb;
-        color: black;
-    }
-</style>
