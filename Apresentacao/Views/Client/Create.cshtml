@@ -1,11 +1,22 @@
-﻿@model Apresentacao.Entidades.Clientes
+﻿
+
+
+
+@model Apresentacao.Entidades.Clientes
 
 @{
     ViewData["Title"] = "Create";
 }
 
-<p>Cadastro</p>
-</br></br>
+<nav class="navbar" style="background-color: #ecf9fb;">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">Inicio</li>
+        <li class="breadcrumb-item">Galeria</li>
+        <li class="breadcrumb-item">Projetos</li>
+        <li class="breadcrumb-item active">Cadastro</li>
+    </ol>
+</nav>
+
 <a>Cadastre-se para receber informativos sobre nossas futuras campanhas!</a>
 <hr />
 <div class="row">
@@ -51,11 +62,18 @@
 @section css {
 
     <style>
+        li.breadcrumb {
+            background-color: #ecf9fb;
+        }
+
+        ol.breadcrumb {
+            background-color: #ecf9fb;
+        }
         p {
             font-style: italic;
             font-weight: bold;
             font-size: 18px;
-            font-family: 'Times New Roman', sans-serif;
+            font-family: 'Times New Roman';
             color: black
         }
     </style>

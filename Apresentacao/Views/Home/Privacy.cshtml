@@ -1,18 +1,32 @@
-﻿<p>Galeria</p>
-<br />
+﻿
+
 @section css{
     <style>
+        li.breadcrumb {
+            background-color: #ecf9fb;
+        }
+
+        ol.breadcrumb {
+            background-color: #ecf9fb;
+        }
 
         p {
             font-style: italic;
             font-weight: bold;
             font-size: 18px;
-            font-family: 'Times New Roman', sans-serif;
-            color: black
+            font-family: 'Calibri';
+            color: black;
         }
       
     </style>
 }
+
+<nav class="navbar" style="background-color: #ecf9fb;">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">Inicio</li>
+        <li class="breadcrumb-item active">Galeria</li>
+    </ol>
+</nav>
 
 <div class="row">
     <div class="col-md-3 col-sm-12">
