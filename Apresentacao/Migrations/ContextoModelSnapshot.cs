@@ -31,6 +31,9 @@ namespace Apresentacao.Migrations
                     b.Property<string>("senha")
                         .HasColumnType("text");
 
+                    b.Property<string>("e-mail")
+                      .HasColumnType("text");
+
                     b.HasKey("id");
 
                     b.ToTable("CLIENTES");

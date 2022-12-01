@@ -14,6 +14,7 @@ namespace Apresentacao.Migrations
                     id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("MySQL:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
                     nome = table.Column<string>(type: "text", nullable: true),
+                    email = table.Column<string>(type: "text", nullable: true),
                     login = table.Column<string>(type: "text", nullable: true),
                     senha = table.Column<string>(type: "text", nullable: true)
                 },
